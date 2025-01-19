@@ -83,10 +83,10 @@
 
             <!-- Sosial Media Icons -->
             <div class="text-center mt-3">
-                <a href="#" class="fs-5 text-dark me-4"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="fs-5 text-dark me-4"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="fs-5 text-dark me-4"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="fs-5 text-dark "><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/dimm.angg_/" class="fs-5 text-dark me-4" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dimas.anggoro40" class="fs-5 text-dark me-4" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/dimas-anggoro-putro-688998329/" class="fs-5 text-dark me-4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/dimasanggoroputro" class="fs-5 text-dark" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
         <!-- session skill -->
@@ -155,11 +155,12 @@
             <div class="col">
                 <div class="custom-card">
                     <div class="custom-card-body">
-                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-2"style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <h5 class="custom-card-title">Kalkulator Sederhana</h5>
                         <p class="custom-card-text">Kalkulator web sederhana untuk perhitungan matematika dasar, menggunakan HTML, CSS, dan JavaScript.</p>
                         <div class="d-flex align-items-center">
-                            <a href="#" class="custom-btn me-2">Lihat Proyek</a>
+                            <!-- Tombol untuk membuka Modal -->
+                            <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#projectModal1">Lihat Proyek</button>
                             <!-- Icons for languages used -->
                             <i class="fab fa-html5 text-danger fs-4 me-2" title="HTML"></i>
                             <i class="fab fa-css3-alt text-primary fs-4 me-2" title="CSS"></i>
@@ -169,18 +170,68 @@
                 </div>
             </div>
 
+             <!-- Modal Popup -->
+             <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="width: auto;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel">Demo Kalkulator Sederhana</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/project/1.png" alt="Kalkulator Sederhana" class="img-fluid" style="border-radius: 2%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                            <p class="mt-2">Ini adalah kalkulator sederhana yang memungkinkan pengguna untuk melakukan perhitungan dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian. Proyek ini dibuat menggunakan HTML, CSS, dan JavaScript.</p>
+                            <div>
+                                <h6>Bahasa:</h6>
+                                <i class="fab fa-html5 text-danger fs-4 me-2" title="HTML"></i>
+                                <i class="fab fa-css3-alt text-primary fs-4 me-2" title="CSS"></i>
+                                <i class="fab fa-js text-warning fs-4" title="JavaScript"></i>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="custom-btn me-2" data-bs-dismiss="modal">Tutup</button>
+                            <a href="https://dimasanggoroputro.github.io/kalkulator/" class="custom-btn me-2" target="_blank">Demo Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Custom Project 2 -->
             <div class="col">
                 <div class="custom-card">
                     <div class="custom-card-body">
-                        <img src="assets/img/project/2.png" alt="" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                        <h5 class="custom-card-title">Perpustakan Digital</h5>
+                        <img src="assets/img/project/2.png" alt="Perpustakaan Digital" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <h5 class="custom-card-title">Perpustakaan Digital</h5>
                         <p class="custom-card-text">Web perpustakaan digital untuk manajemen buku dan peminjaman dengan desain modern dan responsif.</p>
                         <div class="d-flex align-items-center">
-                            <a href="#" class="custom-btn me-2">Lihat Proyek</a>
-                            <!-- Icons for languages used -->
-                            <i class="fab fa-php text-primary fs-4 me-2" title="React"></i>
+                            <a href="#" class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#projectModal2">Lihat Proyek</a>
+                            <i class="fab fa-php text-primary fs-4 me-2" title="PHP"></i>
                             <i class="fab fa-bootstrap fs-4 me-2" title="Bootstrap" style="color: rgb(74, 2, 142);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Perpustakan Digital -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                <div class="modal-dialog" >
+                    <div class="modal-content" style="width: auto;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel2">Demo Perpustakaan Digital</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/project/2.png" alt="Perpustakaan Digital" class="img-fluid" style="border-radius: 2%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                            <p class="mt-2">Perpustakaan Digital ini dirancang untuk mengelola buku dan peminjaman dengan antarmuka pengguna yang modern dan responsif. Sistem ini dibangun dengan menggunakan PHP dan Bootstrap untuk memberikan pengalaman yang optimal.</p>
+                            <div>
+                                <h6>Bahasa:</h6>
+                                <i class="fab fa-php text-primary fs-4 me-2" title="PHP"></i>
+                                <i class="fab fa-bootstrap fs-4 me-2" title="Bootstrap" style="color: rgb(74, 2, 142);"></i>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="custom-btn me-2" data-bs-dismiss="modal">Tutup</button>
+                            <a href="https://github.com/dimasanggoroputro" class="custom-btn me-2" target="_blank">Demo Code</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +245,7 @@
                         <h5 class="custom-card-title">Kalkulator Sederhana</h5>
                         <p class="custom-card-text">Kalkulator web sederhana untuk perhitungan matematika dasar, menggunakan HTML, CSS, dan JavaScript.</p>
                         <div class="d-flex align-items-center">
-                            <a href="#" class="custom-btn me-2">Lihat Proyek</a>
+                            <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#projectModal1">Lihat Proyek</button>
                             <!-- Icons for languages used -->
                             <i class="fab fa-html5 text-danger fs-4 me-2" title="HTML"></i>
                             <i class="fab fa-css3-alt text-primary fs-4 me-2" title="CSS"></i>
@@ -246,10 +297,10 @@
     <div class="container">
         <p>&copy; 2025 Portofolio | Dimas Anggoro Putro.</p>
         <div>
-            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class=""><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/dimm.angg_/" class="fs-5 text-dark me-4" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dimas.anggoro40" class="fs-5 text-dark me-4" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/dimas-anggoro-putro-688998329/" class="fs-5 text-dark me-4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/dimasanggoroputro" class="fs-5 text-dark" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </footer>
