@@ -1,8 +1,9 @@
-*{
+/* Universal Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -10,37 +11,76 @@
     outline: none;
 }
 
-:root{
-    --mainColor1 : rgb(54, 6, 84);
-    --mainColor2 : rgb(69, 19, 100);
+:root {
+    --mainColor1: rgb(54, 6, 84);
+    --mainColor2: rgb(69, 19, 100);
 }
 
-body{
+body {
     background-color: #fff;
     overflow-x: hidden;
 }
 
+/* Navbar */
+#navbar {
+    position: fixed;
+    background-color: #ffffffa5;
+    transition: background-color 0.5s, color 0.5s;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+#navbar .navbar-brand {
+    color: var(--mainColor1);
+    transition: color 0.3s;
+}
+
+#navbar .nav-link {
+    font-size: 17px;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 500;
+}
+
+#navbar.scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar.scrolled .navbar-brand {
+    color: var(--mainColor1);
+}
+
+#navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Hero Section */
 #hero {
     position: relative;
-    min-height: 100vh; /* Pastikan background hero memenuhi layar */
+    min-height: 100vh;
     background-image: linear-gradient(80deg, rgb(44, 7, 53), rgb(78, 20, 140));
     overflow: hidden;
     color: white;
     padding: 0;
-    z-index: 0; /* Hero tetap di bawah navbar */
+    z-index: 0;
 }
 
-/* Konten Hero di atas animasi */
 .hero-content {
     position: relative;
-    z-index: 10; /* Konten berada di atas animasi */
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
 }
 
-/* Pengaturan overlay */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -51,116 +91,8 @@ body{
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 1)
     );
-    z-index: 5; /* Overlay di atas animasi */
+    z-index: 5;
 }
-
-/* Animasi tetap besar */
-#up, #down, #left, #right {
-    position: absolute;
-    z-index: 0; /* Animasi berada di bawah konten */
-    border-radius: 40%;
-}
-
-#up {
-    height: 700px;
-    width: 700px;
-    background-image: linear-gradient(80deg, rgb(0, 70, 146), rgba(138, 0, 159, 0.5)); 
-    filter: blur(80px);
-    animation: down 40s infinite;
-}
-
-#down {
-    right: 0;
-    height: 600px;
-    width: 600px;
-    background-image: linear-gradient(80deg, rgb(11, 3, 90), rgb(54, 56, 90)); 
-    filter: blur(80px);
-    animation: up 30s infinite;
-}
-
-#left {
-    height: 500px;
-    width: 500px;
-    background-image: linear-gradient(80deg, rgb(0, 117, 163), rgba(97, 61, 193, 0.8));
-    filter: blur(80px);
-    animation: left 45s 1s infinite;
-}
-
-#right {
-    height: 600px;
-    width: 600px;
-    background-image: linear-gradient(80deg, rgb(78, 20, 140, 0.6), rgb(44, 7, 53, 0.8)); 
-    filter: blur(80px);
-    animation: right 45s .5s infinite;
-}
-
-/* Animasi */
-@keyframes down {
-    0%, 100% { top: -200px; }
-    70% { top: 400px; }
-}
-@keyframes up {
-    0%, 100% { bottom: -200px; }
-    70% { bottom: 400px; }
-}
-@keyframes left {
-    0%, 100% { left: -100px; }
-    70% { left: 800px; }
-}
-@keyframes right {
-    0%, 100% { right: -100px; }
-    70% { right: 800px; }
-}
-
-/* Responsif: Pastikan foto dan teks berada dalam satu kolom pada perangkat mobile */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
-/* Default Navbar */
-#navbar {
-    position: fixed;
-    background-color: transparent; /* Tambahkan background solid */
-    transition: background-color 0.5s, color 0.5s;
-    font-weight: 600;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1050; /* Gunakan nilai tinggi namun wajar */
-}
-
-#navbar .navbar-brand {
-    color: white; 
-    transition: color 0.3s;
-}
-
-#navbar .nav-link  {
-    font-size: 17px;
-    color: white !important; /* Teks putih untuk background transparan */
-    font-weight: 500;
-}
-
-#navbar.scrolled {
-    background-color: rgb(255, 255, 255); /* Warna solid */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
-}
-
-/* Saat Navbar di-scroll */
-#navbar.scrolled .navbar-brand {
-    color: black; /* Ubah menjadi hitam saat background navbar putih */
-}
-#navbar.scrolled samp {
-    color: var(--mainColor1); /* Ubah menjadi hitam saat background navbar putih */
-}
-
-#navbar.scrolled .nav-link {
-    color: black !important; /* Ubah teks jadi hitam */
-}
-
 
 #hero img {
     max-width: 70%;
@@ -173,47 +105,47 @@ body{
 }
 
 #hero .btn-outline-light:hover {
-    background-color: var(--mainColor2); /* Efek hover dengan latar belakang transparan putih */
-    color: white; 
-    border-color: rgba(255, 255, 255, 0.6); /* Mengubah warna border saat hover */
+    background-color: var(--mainColor2);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-.skill-item{
+/* Skills Section */
+.skill-item {
     display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 2.2rem;
     text-align: center;
     margin-top: 2rem;
 }
 
-.skill-box{
+.skill-box {
     padding: 30px;
     background: var(--mainColor1);
     border-radius: 0.8rem;
     cursor: pointer;
 }
 
-.skill-box:hover{
+.skill-box:hover {
     background-color: var(--mainColor2);
     border: 3px solid var(--mainColor1);
 }
 
-.skill i{
+.skill i {
     font-size: 50px;
-    color:#ffffff;
+    color: #ffffff;
     margin-bottom: 10px;
 }
-.skill h3{
+
+.skill h3 {
     color: #ffffff;
     font-size: 23px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-/* session projeck */
+/* Projects Section */
 .custom-card {
     background-color: #fff;
     border-radius: 8px;
@@ -242,7 +174,7 @@ body{
 .custom-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color:var(--mainColor1);
+    background-color: var(--mainColor1);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -251,12 +183,10 @@ body{
 }
 
 .custom-btn:hover {
-    background-color: var(--mainColor2); /* Efek hover untuk tombol */
+    background-color: var(--mainColor2);
 }
 
-/* session projeck */
-
-/* session kontak */
+/* Contact Section */
 .contact {
     background-color: #fff;
     padding: 30px 0;
@@ -278,23 +208,18 @@ body{
     box-shadow: none;
 }
 
-/* Memaksa perubahan dengan !important */
 .btn-custom {
-    background-color: var(--mainColor1) !important; /* Ungu */
+    background-color: var(--mainColor1) !important;
     color: white !important;
     border: none !important;
     transition: background-color 0.3s ease !important;
 }
 
 .btn-custom:hover {
-    background-color: var(--mainColor2) !important; /* Ungu lebih gelap saat di-hover */
+    background-color: var(--mainColor2) !important;
 }
 
-
-/* session kontak */
-
-/* footer */
-/* Style untuk Footer */
+/* Footer */
 footer {
     background-color: var(--mainColor1);
     color: white;
@@ -315,4 +240,84 @@ footer i {
     font-size: 1.2rem;
 }
 
-/* footer */
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content .row {
+        gap: 20px; /* Atur jarak antar elemen */
+    }
+
+    .hero-content .col-12 {
+        margin-bottom: 10px; /* Kurangi margin bawah */
+    }
+
+    .hero-content img {
+        max-width: 80%; /* Sesuaikan ukuran gambar */
+        margin: 0 auto; /* Pusatkan gambar */
+        margin-top: -200px;
+    }
+
+}
+
+/* Animations */
+@keyframes down {
+    0%, 100% { top: -200px; }
+    70% { top: 400px; }
+}
+
+@keyframes up {
+    0%, 100% { bottom: -200px; }
+    70% { bottom: 400px; }
+}
+
+@keyframes left {
+    0%, 100% { left: -100px; }
+    70% { left: 800px; }
+}
+
+@keyframes right {
+    0%, 100% { right: -100px; }
+    70% { right: 800px; }
+}
+
+#up, #down, #left, #right {
+    position: absolute;
+    z-index: 0;
+    border-radius: 40%;
+}
+
+#up {
+    height: 700px;
+    width: 700px;
+    background-image: linear-gradient(80deg, rgb(0, 70, 146), rgba(138, 0, 159, 0.5));
+    filter: blur(80px);
+    animation: down 40s infinite;
+}
+
+#down {
+    right: 0;
+    height: 600px;
+    width: 600px;
+    background-image: linear-gradient(80deg, rgb(11, 3, 90), rgb(54, 56, 90));
+    filter: blur(80px);
+    animation: up 30s infinite;
+}
+
+#left {
+    height: 500px;
+    width: 500px;
+    background-image: linear-gradient(80deg, rgb(0, 117, 163), rgba(97, 61, 193, 0.8));
+    filter: blur(80px);
+    animation: left 45s 1s infinite;
+}
+
+#right {
+    height: 600px;
+    width: 600px;
+    background-image: linear-gradient(80deg, rgba(78, 20, 140, 0.6), rgba(44, 7, 53, 0.8));
+    filter: blur(80px);
+    animation: right 45s .5s infinite;
+}

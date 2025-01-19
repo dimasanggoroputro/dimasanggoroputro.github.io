@@ -8,10 +8,33 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.getElementById('navbar');
-    const card = document.querySelector('.card');
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
-    console.log('Navbar Z-Index:', window.getComputedStyle(navbar).zIndex);
-    console.log('Card Z-Index:', window.getComputedStyle(card).zIndex);
+        if (targetElement) {
+            const offsetTop = targetElement.offsetTop - 80; // Sesuaikan 80 dengan tinggi navbar
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+const heroButton = document.getElementById('hero-btn');
+heroButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('data-target').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+        const offsetTop = targetElement.offsetTop - 80; // Sesuaikan dengan tinggi navbar
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+        });
+    }
 });

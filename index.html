@@ -23,28 +23,28 @@
     <div id="left"></div>
     <div id="right"></div>
 
-    <nav id="navbar" class="navbar navbar-expand-lg ">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Dimas <samp>Anggoro</samp></a>
+            <a class="navbar-brand" href="#">Dimas Anggoro.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> <!-- Tambahkan ms-auto di sini -->
                     <li class="nav-item me-2">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#beranda">Beranda</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link" href="#about">About Me</a>
+                        <a class="nav-link" href="#tentang">Tentang Saya</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link" href="#skill">My Skill</a>
+                        <a class="nav-link" href="#kemapuan">Kemampuan Saya</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link" href="#project">My Project</a>
+                        <a class="nav-link" href="#proyek">Proyek Saya</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
                 </ul>
             </div>
@@ -53,13 +53,13 @@
     
 
     <div class="container">
-      <div class="hero-content container">
+      <div class="hero-content container" id="beranda">
         <div class="row align-items-center justify-content-center" style="min-height: 100vh;">
           <!-- Text Side -->
           <div class="col-12 col-md-6 text-center text-md-start">
-                <h3 style="font-weight: 700;">Welcome to My Website 👋</h3>
-                <p>"Saya berkomitmen untuk menciptakan pengalaman pengguna yang luar biasa melalui desain dan pengembangan web yang efisien dan menarik."</p>             
-                <a href="#about"><button class="btn btn-outline-light" style="border-width: 2px; transition: all 0.3s ease;">Click Me</button></a>
+                <h3 style="font-weight: 700;">Selamat Datang di Website Saya 👋</h3>
+                <p>Saya berkomitmen untuk menciptakan pengalaman pengguna yang luar biasa melalui desain dan pengembangan web yang efisien dan menarik.</p>             
+                <button id="hero-btn" data-target="#tentang" class="btn btn-outline-light">Tentang Saya</button>
             </div>
           <!-- Image Side -->
           <div class="col-12 col-md-5 text-center text-md-end">
@@ -77,10 +77,9 @@
 <!-- Main Session -->
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="p-3 mb-3" style="border: 1px solid rgb(80, 5, 99);" id="about">
+        <div class="p-3 mb-3" style="border: 1px solid rgb(80, 5, 99);" id="tentang">
             <h2 class="text-center fw-semibold">Tentang Saya</h2>
-            <p class="text-center fs-6">Helo, My name <strong>Dimas Anggoro Putro</strong> i`m from XI - RPL class attending at SMK Catur Global My Major is 
-                Sofware Engineers</p>
+            <p class="text-center fs-6">Saya <strong>Dimas Anggoro Putro</strong> , pelajar SMK jurusan RPL yang memiliki minat besar dalam pengembangan web. Dengan keterampilan HTML, CSS, JavaScript, dan PHP, saya terus belajar menciptakan solusi digital yang kreatif dan fungsional. Saya percaya bahwa setiap proyek adalah peluang untuk berkembang dan berbagi manfaat bagi banyak orang.</p>
 
             <!-- Sosial Media Icons -->
             <div class="text-center mt-3">
@@ -91,11 +90,11 @@
             </div>
         </div>
         <!-- session skill -->
-        <div class="col-md-8" id="skill">
-            <section class="skill mt-5" id="skill">
+        <div class="col-md-8" id="kemampuan">
+            <section class="skill mt-5">
                 <div class="text-center">
-                    <h2 class="text-center fw-semibold">My Skill</h2>
-                    <p class="text-center fs-6">My Skill makes us have a working relationship</p>
+                    <h2 class="text-center fw-semibold">Kemampuan Saya</h2>
+                    <p class="text-center fs-6">Melalui kemampuan ini, saya dapat membantu menciptakan kerja sama yang efektif dan inovatif.</p>
                 </div>
 
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
@@ -144,9 +143,9 @@
 <!-- End Main Session -->
     
 <!-- Project Section -->
-<section class="mt-5 p-3 " style="background-color: rgba(170, 167, 167, 0.308);" id="project">
+<section class="mt-5 p-3 " style="background-color: rgba(170, 167, 167, 0.308);" id="proyek">
     <div class="text-center">
-        <h2 class="text-center fw-semibold">My Project</h2>
+        <h2 class="text-center fw-semibold">Proyek Saya</h2>
         <p class="text-center fs-6">Berikut adalah beberapa proyek yang telah saya buat:</p>
     </div>
 
@@ -156,7 +155,7 @@
             <div class="col">
                 <div class="custom-card">
                     <div class="custom-card-body">
-                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-1"style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-2"style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <h5 class="custom-card-title">Kalkulator Sederhana</h5>
                         <p class="custom-card-text">Kalkulator web sederhana untuk perhitungan matematika dasar, menggunakan HTML, CSS, dan JavaScript.</p>
                         <div class="d-flex align-items-center">
@@ -174,7 +173,7 @@
             <div class="col">
                 <div class="custom-card">
                     <div class="custom-card-body">
-                        <img src="assets/img/project/2.png" alt="" class="img-fluid mb-1" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <img src="assets/img/project/2.png" alt="" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <h5 class="custom-card-title">Perpustakan Digital</h5>
                         <p class="custom-card-text">Web perpustakaan digital untuk manajemen buku dan peminjaman dengan desain modern dan responsif.</p>
                         <div class="d-flex align-items-center">
@@ -191,7 +190,7 @@
             <div class="col">
                 <div class="custom-card">
                     <div class="custom-card-body">
-                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-1"style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <img src="assets/img/project/1.png" alt="" class="img-fluid mb-2"style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <h5 class="custom-card-title">Kalkulator Sederhana</h5>
                         <p class="custom-card-text">Kalkulator web sederhana untuk perhitungan matematika dasar, menggunakan HTML, CSS, dan JavaScript.</p>
                         <div class="d-flex align-items-center">
@@ -211,10 +210,10 @@
 <!-- Project end -->
 
 <!-- Contact Section -->
-<section class="contact p-5" id="contact ">
+<section class="contact p-5" id="kontak">
     <div class="text-center mb-4">
-        <h2 class="fw-semibold">Contact Me</h2>
-        <p class="fs-6">Feel free to reach out to me for any inquiries or collaborations.</p>
+        <h2 class="fw-semibold">Kontak</h2>
+        <p class="fs-6">Hubungi saya untuk informasi lebih lanjut</p>
     </div>
 
     <div class="container">
@@ -223,18 +222,18 @@
             <div class="col-md-8 mx-auto">
                 <form action="#" method="POST">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <label for="name" class="form-label">Nama Anda</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukan nama anda" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <label for="email" class="form-label">Email Anda</label>
+                        <input type="email" class="form-control" id="email" placeholder="Mauskan email anda" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        <label for="message" class="form-label">Pesan Anda</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Masukan pesan anda" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-custom">Send Message</button>
+                    <button type="submit" class="btn btn-custom">Kirim Pesan</button>
                 </form>
             </div>
         </div>
@@ -245,7 +244,7 @@
 <!-- Footer Section -->
 <footer class=" text-center py-3 mt-3">
     <div class="container">
-        <p>&copy; 2025 Dimas Anggoro Putro. All rights reserved.</p>
+        <p>&copy; 2025 Portofolio | Dimas Anggoro Putro.</p>
         <div>
             <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
