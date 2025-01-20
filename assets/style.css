@@ -18,7 +18,6 @@
 
 body {
     background-color: #fff;
-    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -111,39 +110,35 @@ section {
 }
 
 /* Skills Section */
-.skill-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
-    gap: 2.2rem;
-    text-align: center;
-    margin-top: 2rem;
-}
 
+/* Skill Box */
 .skill-box {
     padding: 30px;
     background: var(--mainColor1);
     border-radius: 0.8rem;
     cursor: pointer;
+    transition: transform 0.3s ease
 }
 
 .skill-box:hover {
     background-color: var(--mainColor2);
-    border: 3px solid var(--mainColor1);
 }
 
-.skill i {
+/* Ikon di Skill Box */
+.skill-box i {
     font-size: 50px;
     color: #ffffff;
     margin-bottom: 10px;
 }
 
-.skill h3 {
+/* Judul Skill */
+.skill-box h3 {
     color: #ffffff;
     font-size: 23px;
     font-weight: 700;
     margin-bottom: 10px;
 }
+
 
 /* Projects Section */
 .custom-card {
@@ -152,7 +147,11 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
-    z-index: 0;
+}
+
+.custom-card:hover{
+    transform: translateY(-9px);
+
 }
 
 .custom-card-body {

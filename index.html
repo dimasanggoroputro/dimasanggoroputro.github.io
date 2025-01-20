@@ -426,5 +426,28 @@
         once: true,
         duration: 500,
       });
+
+      // mengatur AOS di layar hp
+        document.addEventListener("DOMContentLoaded", () => {
+            const skillItems = document.querySelectorAll(".skill-box");
+
+            // Jika layar perangkat lebih dari 768px (Desktop/Laptop)
+            if (window.innerWidth > 768) {
+                skillItems.forEach((item, index) => {
+                    if (index < 3) {
+                        item.setAttribute("data-aos", "fade-left"); // 3 skill pertama fade-left
+                    } else {
+                        item.setAttribute("data-aos", "fade-right"); // 3 skill berikutnya fade-right
+                    }
+                });
+            } else {
+                // Jika layar perangkat 768px atau lebih kecil (Mobile)
+                skillItems.forEach((item) => {
+                    item.setAttribute("data-aos", "fade-up"); // Semua animasi jadi fade-up
+                });
+            }
+        });
+
+
     </script></body>
 </html>

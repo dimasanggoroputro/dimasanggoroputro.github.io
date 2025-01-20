@@ -40,6 +40,7 @@ heroButton.addEventListener('click', function (e) {
 });
 
 
+
 // Submit Form to Google Sheets
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzPiJim6Xy8myyKoHhKMOsCJyT1hRn7_7OuoJ0D813u_1aUHVwm61jxX88gikPlJu2-/exec'
   const form = document.forms['contact-form']
