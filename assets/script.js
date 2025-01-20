@@ -38,3 +38,26 @@ heroButton.addEventListener('click', function (e) {
         });
     }
 });
+
+
+// Submit Form to Google Sheets
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzPiJim6Xy8myyKoHhKMOsCJyT1hRn7_7OuoJ0D813u_1aUHVwm61jxX88gikPlJu2-/exec'
+  const form = document.forms['contact-form']
+  const kirim = document.querySelector('.btn-kirim')
+  const loding = document.querySelector('.btn-loding')
+  const myAlert = document.querySelector('.alert')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    loding.classList.toggle('d-none')
+    kirim.classList.toggle('d-none')
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        loding.classList.toggle('d-none')
+        kirim.classList.toggle('d-none')
+        myAlert.classList.toggle('d-none')
+        form.reset()
+        console.log('Success!', response)
+    })
+      .catch(error => console.error('Error!', error.message))
+  })

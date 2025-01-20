@@ -271,20 +271,28 @@
         <div class="row">
             <!-- Contact Form -->
             <div class="col-md-8 mx-auto">
-                <form action="#" method="POST">
+                <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                    <strong>TerimaKaih</strong> pesan anda sudah terkirim.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                <form name="contact-form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nama Anda</label>
-                        <input type="text" class="form-control" id="name" placeholder="Masukan nama anda" required>
+                        <input type="text" class="form-control" id="name" name="nama" placeholder="Masukan nama anda" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Anda</label>
-                        <input type="email" class="form-control" id="email" placeholder="Mauskan email anda" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Mauskan email anda" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Pesan Anda</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Masukan pesan anda" required></textarea>
+                        <textarea class="form-control" id="message" rows="4" name="pesan" placeholder="Masukan pesan anda" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-custom">Kirim Pesan</button>
+                    <button type="submit" class="btn btn-custom btn-kirim">Kirim Pesan</button>
+                    <button class="btn btn-custom d-none btn-loding" type="button" disabled>
+                        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                        <span role="status">Loading...</span>
+                      </button> 
                 </form>
             </div>
         </div>
