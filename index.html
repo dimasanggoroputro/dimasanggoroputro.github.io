@@ -40,6 +40,9 @@
                     <li class="nav-item me-2">
                         <a class="nav-link" href="#proyek">Proyek Saya</a>
                     </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#sertifikat">Sertifikat Saya</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
@@ -258,8 +261,96 @@
             <!-- kalo mau nambah -->
         </div>
     </div>
+    
 </section>
 <!-- Project end -->
+
+ <!-- sertifikat -->
+<section class="p-3" style="background-color: rgba(170, 167, 167, 0.308);" id="sertifikat">
+    <div class="text-center">
+        <h2 class="text-center fw-semibold">Sertifikat Saya</h2>
+        <p class="text-center fs-6">Berikut adalah beberapa sertifikat yang telah saya peroleh:</p>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+            <!-- Sertifikat 1 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="assets/img/sertifikat/Sertifikat Web Dasar.png" alt="Sertifikat 1" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <h5 class="custom-card-title">Sertifikat Pelatihan Pemrograman Web</h5>
+                        <p class="custom-card-text">Mempelajari elemen-elemen dasar HTML dan CSS yang menjadi pondasi utama dalam membangun keterampilan sebagai front-end web developer.</p>
+                        <div class="d-flex align-items-center">
+                            <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#certificateModal1">Lihat Sertifikat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sertifikat 2 -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="assets/img/sertifikat/Sertifikat JavaScript.png" alt="Sertifikat 2" class="img-fluid mb-2" style="border-radius: 3%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <h5 class="custom-card-title">Sertifikat Pelatihan Pemrograman JavaScript</h5>
+                        <p class="custom-card-text">Mempelajari dasar-dasar JavaScript, mulai dari fundamental, sintaks, fitur ES6, hingga memahami konsep pengujian otomatis menggunakan framework populer.</p>
+                        <div class="d-flex align-items-center">
+                            <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#certificateModal2">Lihat Sertifikat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Sertifikat 1 -->
+<div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certificateModalLabel1">Sertifikat Pelatihan Pemrograman Web</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Sertifikat Gambar -->
+                <img src="assets/img/sertifikat/Sertifikat Web Dasar.png" alt="Sertifikat 1" class="img-fluid mb-3" style="border-radius: 2%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p class="mt-2">Sertifikat ini diterima setelah menyelesaikan pelatihan "Pemrograman Web Dasar" yang diselenggarakan oleh <strong>Dicoding Academy</strong>. Pelatihan ini mencakup pemahaman mendalam tentang HTML, CSS, dan pengenalan JavaScript untuk pemula.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Tombol Lihat PDF -->
+                <a href="assets/img/sertifikat/pdf/sertifikat_web dasar.pdf" target="_blank" class="btn btn-custom">Lihat Sertifikat PDF</a>
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Sertifikat 2 -->
+<div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certificateModalLabel2">Sertifikat Pelatihan Pemrograman JavaScript</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Sertifikat Gambar -->
+                <img src="assets/img/sertifikat/Sertifikat JavaScript.png" alt="Sertifikat 2" class="img-fluid mb-3" style="border-radius: 2%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p class="mt-2">Sertifikat ini diperoleh dari pelatihan "JavaScript Developer" yang diadakan oleh <strong>Dicoding Academy</strong>. Program ini meliputi materi seperti fundamental JavaScript, ES6, dan pengenalan framework untuk pengujian otomatis.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Tombol Lihat PDF -->
+                <a href="assets/img/sertifikat/pdf/sertifikat_Javascript.pdf" target="_blank" class="btn btn-custom">Lihat Sertifikat PDF</a>
+                <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- sertifikat end -->
+
+
 
 <!-- Contact Section -->
 <section class="contact p-5" id="kontak">
@@ -324,9 +415,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
     <script>
         gsap.registerPlugin(TextPlugin)
-        gsap.to('.hero-heding', {duration:3, delay:1.5, text:'Selamat Datang di Website Saya 👋'})
-        gsap.fromTo('.hero-content img',{ opacity: 0,},{ opacity: 1,duration: 3,ease: "power2.out"});
-        gsap.from('.hero-text',{ x: -200, opacity: 0, duration: 1.5,});
+        gsap.to('.hero-heding', {duration:3, delay:1, text:'Selamat Datang di Website Saya 👋'})
+        gsap.fromTo('.hero-content img',{ opacity: 0,},{ opacity: 1,duration: 3,delay:0.5, ease: "power2.out"});
+        gsap.from('.hero-text',{ x: -200, opacity: 0, duration: 1,});
     </script>
     <!-- JS AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
