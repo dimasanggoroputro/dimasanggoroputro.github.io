@@ -12,8 +12,8 @@
 }
 
 :root {
-    --mainColor1: rgb(54, 6, 84);
-    --mainColor2: rgb(69, 19, 100);
+    --mainColor1: rgb(13, 59, 102);
+    --mainColor2: rgb(250, 121, 33);
 }
 
 body {
@@ -64,7 +64,7 @@ section {
 #hero {
     position: relative;
     min-height: 100vh;
-    background-image: linear-gradient(80deg, rgb(44, 7, 53), rgb(78, 20, 140));
+    background-image: linear-gradient(80deg, rgb(13, 59, 102), rgb(11, 47, 81));
     overflow: hidden;
     color: white;
     padding: 0;
@@ -291,34 +291,34 @@ footer i {
 #up {
     height: 700px;
     width: 700px;
-    background-image: linear-gradient(80deg, rgb(0, 70, 146), rgba(138, 0, 159, 0.5));
+    background-image: linear-gradient(80deg, rgb(142, 68, 173), rgba(250, 120, 33, 0.84));
     filter: blur(80px);
-    animation: down 40s infinite;
+    animation: down 30s infinite;
 }
 
 #down {
     right: 0;
     height: 600px;
     width: 600px;
-    background-image: linear-gradient(80deg, rgb(11, 3, 90), rgb(54, 56, 90));
+    background-image: linear-gradient(80deg, rgb(250, 121, 33), rgb(142, 68, 173));
     filter: blur(80px);
-    animation: up 30s infinite;
+    animation: up 20s infinite;
 }
 
 #left {
     height: 500px;
     width: 500px;
-    background-image: linear-gradient(80deg, rgb(0, 117, 163), rgba(97, 61, 193, 0.8));
+    background-image: linear-gradient(80deg, rgb(255, 197, 37), rgba(97, 61, 193, 0.8));
     filter: blur(80px);
-    animation: left 45s 1s infinite;
+    animation: left 35s 1s infinite;
 }
 
 #right {
     height: 600px;
     width: 600px;
-    background-image: linear-gradient(80deg, rgba(78, 20, 140, 0.6), rgba(44, 7, 53, 0.8));
+    background-image: linear-gradient(80deg, rgba(13, 59, 102), rgba(142, 68, 173));
     filter: blur(80px);
-    animation: right 45s .5s infinite;
+    animation: right 35s .5s infinite;
 }
 
   
