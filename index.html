@@ -23,9 +23,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Dimas Anggoro.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> <!-- Tambahkan ms-auto di sini -->
                     <li class="nav-item me-2">
@@ -48,6 +46,23 @@
                     </li>
                 </ul>
             </div>
+            <div class="d-flex ms-auto">
+                <div class="dropdown mx-2">
+                    <button class="btn btn-theme" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-brush"></i>                    
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <div class="d-flex justify-content-evenly">
+                            <button class="theme aurora" onclick="changeTheme('aurora')"></button>
+                           <button class="theme galaksi" onclick="changeTheme('galaksi')"></button>
+                           <button class="theme galaksiBiru" onclick="changeTheme('galaksiBiru')"></button>
+                        </div>
+                    </ul>
+                  </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     
@@ -76,12 +91,12 @@
 
     <div class="overlay"></div>
 </div>
-<!-- End Hero Session -->
+    <!-- End Hero Session -->
 
 <!-- Main Session -->
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="p-3 mb-3" style="border: 1px solid rgb(250, 121, 33);" id="tentang"  data-aos="fade-up" data-aos-delay="140" data-aos-duration="1100">
+        <div class="p-3 mb-3" id="tentang"  data-aos="fade-up" data-aos-delay="140" data-aos-duration="1100">
             <h2 class="text-center fw-semibold">Tentang Saya</h2>
             <p class="text-center fs-6">Saya <strong>Dimas Anggoro Putro</strong> , pelajar SMK jurusan RPL yang memiliki minat besar dalam pengembangan web. Dengan keterampilan HTML, CSS, JavaScript, dan PHP, saya terus belajar menciptakan solusi digital yang kreatif dan fungsional. Saya percaya bahwa setiap proyek adalah peluang untuk berkembang dan berbagi manfaat bagi banyak orang.</p>
 
@@ -94,7 +109,7 @@
             </div>
         </div>
         <!-- session skill -->
-        <div class="col-md-8" id="kemampuan">
+        <div class="col" id="kemampuan">
             <section class="skill mt-5">
                 <div class="text-center">
                     <h2 class="text-center fw-semibold">Kemampuan Saya</h2>
@@ -193,8 +208,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="custom-btn me-2" data-bs-dismiss="modal">Tutup</button>
-                            <a href="https://dimasanggoroputro.github.io/kalkulator/" class="custom-btn me-2" target="_blank">Demo Code</a>
+                            <button type="button" class="btn btn-custom me-2" data-bs-dismiss="modal">Tutup</button>
+                            <a href="https://dimasanggoroputro.github.io/kalkulator/" class="btn btn-custom me-2" target="_blank">Demo Code</a>
                         </div>
                     </div>
                 </div>
@@ -234,8 +249,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="custom-btn me-2" data-bs-dismiss="modal">Tutup</button>
-                            <a href="https://github.com/dimasanggoroputro" class="custom-btn me-2" target="_blank">Demo Code</a>
+                            <button type="button" class="btn btn-custom me-2" data-bs-dismiss="modal">Tutup</button>
+                            <a href="https://github.com/dimasanggoroputro" class="btn btn-custom me-2" target="_blank">Demo Code</a>
                         </div>
                     </div>
                 </div>
@@ -364,7 +379,7 @@
             <!-- Contact Form -->
             <div class="col-md-8 mx-auto">
                 <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                    <strong>TerimaKaih</strong> pesan anda sudah terkirim.
+                    <strong>TerimaKasih</strong> pesan anda sudah terkirim.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                 <form name="contact-form">
